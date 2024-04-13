@@ -17,8 +17,10 @@ class Evaluator:
 
     def __init__(self,):
         self.psnrs = []
-        os.system('mkdir -p ' + cfg.result_dir)
-        os.system('mkdir -p ' + cfg.result_dir + '/vis')
+        # os.system('mkdir -p ' + cfg.result_dir)
+        # os.system('mkdir -p ' + cfg.result_dir + '/vis')
+        os.makedirs(cfg.result_dir, exist_ok=True)
+        os.makedirs(os.path.join(cfg.result_dir, 'vis'), exist_ok=True)
 
     def evaluate(self, output, batch):
         # assert image number = 1
