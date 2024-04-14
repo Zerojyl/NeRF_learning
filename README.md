@@ -1,5 +1,15 @@
 # NeRF_learning
 
+This repository is initialized from https://github.com/pengsida/learning_nerf
+
+
+
+---
+
+
+
+# Learning NeRF
+
 This repository is initially created by [Haotong Lin](https://haotongl.github.io/).
 
 ## Motivation of this repository
