@@ -45,6 +45,14 @@ class Trainer(object):
         max_iter = len(data_loader)
         self.network.train()
         end = time.time()
+        print("Batch size: ", data_loader.batch_size)
+        print("Dataset size: ", len(data_loader.dataset))
+
+        # Get one batch of data
+        temp = iter(data_loader)
+        temp_batch = next(temp)
+        print("check dataloader point 5")
+        print(batch)
         for iteration, batch in enumerate(data_loader):
             data_time = time.time() - end
             iteration = iteration + 1
